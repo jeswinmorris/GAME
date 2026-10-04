@@ -39,6 +39,42 @@
     @media(max-height:550px) and (min-width:601px){.character-panel,.chat-panel{top:79px;bottom:auto}.panel-content{max-height:calc(100dvh - 210px);overflow:auto}.grove-label p{font-size:17px}}
     @media(min-width:801px){.panel-heading h2{font-size:13px}.panel-subtitle{font-size:11px}.drop-title{font-size:12px}.browse-line{font-size:11px}.status-title{font-size:11px}.status-description{font-size:9px}.message-name{font-size:11px}.message-text{font-size:11px}.chat-form input{font-size:11px}.privacy-note,.chat-footer{font-size:9px}.entry-controls{font-size:9px}.entry-ready{font-size:9px}}
     @media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}}
+    /* ---- Social platform UI ---- */
+    .net-pill{position:absolute;top:97px;left:50%;transform:translateX(-50%);font-size:9px;letter-spacing:1.2px;font-weight:600;padding:6px 13px;border-radius:99px;background:rgba(31,45,34,.74);border:1px solid var(--line);color:#d8e3c6;backdrop-filter:blur(10px);display:flex;gap:7px;align-items:center;white-space:nowrap;max-width:94vw;overflow:hidden}.net-pill .status-dot{width:5px;height:5px}.net-pill.offline .status-dot{background:#e8b46a}.net-pill.reconnecting .status-dot{background:#e8956a}
+    .entry-content.compact{top:6%;transform:translateX(-50%);max-height:90dvh;overflow:auto;scrollbar-width:thin;padding-bottom:14px}.entry-content.compact .entry-title{font-size:clamp(38px,4.6vw,56px);letter-spacing:-2.5px;margin:8px 0 5px}.entry-content.compact .entry-subtitle{font-size:12px}.entry-content.compact .entry-controls{margin-top:12px}.entry-content.compact .entry-ready{margin-top:10px}
+    .setup{margin:18px auto 0;width:min(434px,94vw);border-radius:14px;padding:19px 19px 17px;text-align:left}
+    .setup-title{font-size:10px;font-weight:650;letter-spacing:1.5px;color:#d9e4c8;margin-bottom:13px;display:flex;justify-content:space-between;align-items:center;gap:10px}.setup-title span{font-weight:450;letter-spacing:0;color:#a9b89c;font-size:9px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+    .auth-button{width:100%;display:flex;align-items:center;justify-content:center;gap:10px;height:44px;border-radius:8px;font-size:11px;font-weight:650;letter-spacing:.4px;margin-bottom:9px;border:1px solid var(--line);background:#ffffff0d;transition:background .2s}.auth-button:hover{background:#ffffff1a}.auth-button.google{background:#f6f3e4;color:#2c3b2b}.auth-button.google:hover{background:#fff}
+    .auth-note{font-size:9px;color:#aebaa0;line-height:1.65;margin:5px 0 0}
+    .field-label{font-size:9px;letter-spacing:1px;color:#becbb0;margin:13px 0 6px;font-weight:600}
+    .text-field{width:100%;border:1px solid #d8e2c924;background:#14251b4d;color:#f1f0de;border-radius:7px;height:38px;padding:0 12px;font-size:12px;outline:0}.text-field:focus{border-color:#edcf9970}
+    .seg{display:flex;gap:7px}.seg button{flex:1;height:36px;border:1px solid var(--line);border-radius:7px;font-size:11px;color:#d8e2c9;background:#ffffff08;display:flex;align-items:center;justify-content:center;gap:7px}.seg button .gdot{width:8px;height:8px;border-radius:50%}.seg button[aria-pressed=true]{border-color:var(--gold);background:#edcf9914;color:#fff}
+    .avatar-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:7px}
+    .avatar-card{aspect-ratio:.82;border:1px solid var(--line);border-radius:9px;background:#ffffff07;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;font-size:8px;color:#cfdcbd;padding-top:6px}
+    .avatar-card .swatch{width:20px;height:24px;border-radius:40% 40% 46% 46%;position:relative}.avatar-card .swatch::after{content:"";position:absolute;top:-7px;left:50%;transform:translateX(-50%);width:12px;height:11px;border-radius:50%;background:inherit}
+    .avatar-card[aria-pressed=true]{border-color:var(--gold);background:#edcf9916;color:#fff}
+    .setup-submit{width:100%;height:42px;margin-top:15px;background:var(--gold);color:#31412c;border-radius:8px;font-size:10px;font-weight:750;letter-spacing:1.4px}.setup-submit:hover{background:#f6dba9}
+    .friends-panel{position:absolute;top:100px;right:26px;width:302px;z-index:40;border-radius:12px;padding:17px;pointer-events:auto;animation:message-in .2s ease both;max-height:min(540px,calc(100dvh - 140px));overflow:auto;scrollbar-width:thin}
+    .friends-section{font-size:9px;letter-spacing:1.2px;color:#b7c4a8;font-weight:650;margin:15px 0 7px}
+    .friend-row{display:flex;align-items:center;gap:9px;padding:8px 6px;border-radius:8px}.friend-row:hover{background:#ffffff08}
+    .friend-dot{width:7px;height:7px;border-radius:50%;background:#9ad27c;flex-shrink:0}.friend-dot.off{background:#7d8a77}
+    .friend-name{flex:1;min-width:0;font-size:11px;font-weight:550;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.friend-sub{display:block;font-size:8px;color:#a8b79b;font-weight:400;margin-top:2px;white-space:normal}
+    .friend-action{font-size:9px;padding:5px 9px;border-radius:6px;border:1px solid var(--line);color:#dbe6c6;flex-shrink:0}.friend-action:hover{background:#ffffff10}.friend-action.gold{color:var(--gold);border-color:#edcf9950}
+    .friends-empty{font-size:10px;color:#a8b79b;line-height:1.6;padding:4px 6px;margin:0}
+    .locate-arrow{position:fixed;top:118px;left:50%;transform:translateX(-50%);z-index:12;display:flex;flex-direction:column;align-items:center;gap:5px;pointer-events:none;text-shadow:0 1px 8px #22361f99}
+    .locate-arrow .pointer{width:38px;height:38px;color:var(--gold);filter:drop-shadow(0 2px 6px #2a401f66)}.locate-arrow .pointer svg{width:100%;height:100%;fill:currentColor}
+    .locate-arrow .who{font-size:10px;font-weight:650;color:#fff6dd;letter-spacing:.4px;background:rgba(31,45,34,.6);padding:4px 10px;border-radius:99px}
+    .portal-prompt{position:fixed;bottom:150px;left:50%;transform:translateX(-50%);z-index:14;padding:11px 17px;border-radius:9px;font-size:11px;color:#f4f2dd;display:flex;align-items:center;gap:9px;cursor:pointer;pointer-events:auto}.portal-prompt kbd{height:18px;min-width:16px;font-size:8px}
+    .portal-overlay{position:fixed;inset:0;z-index:60;background:#1d2d22e8;backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center;text-align:center;opacity:0;transition:opacity .45s;pointer-events:none}
+    .portal-overlay.visible{opacity:1;pointer-events:auto}
+    .portal-overlay h2{font-family:Fraunces,Georgia,serif;font-size:32px;margin:0 0 10px;color:#fdf6e0}.portal-overlay p{font-size:12px;color:#c9d6ba;line-height:1.7;max-width:400px;margin:0 auto 18px;padding:0 14px}
+    .portal-overlay button{padding:11px 20px;background:var(--gold);color:#31412c;border-radius:7px;font-size:10px;font-weight:700;letter-spacing:1px}
+    .exit-screen{position:fixed;inset:0;z-index:70;background:#20301fde;backdrop-filter:blur(10px);display:flex;align-items:center;justify-content:center;text-align:center}
+    .exit-card h2{font-family:Fraunces,Georgia,serif;font-size:40px;margin:0 0 10px;color:#fdf6e0}.exit-card p{font-size:12px;color:#c9d6ba;max-width:380px;line-height:1.7;margin:0 auto 22px;padding:0 14px}
+    .icon-button{position:relative}.icon-button.danger:hover{background:#b2563622;color:#ffc9ad}.icon-button.speaking{color:#aee08b;background:#aee08b1c}#mic-button.active{color:var(--gold)}
+    .badge{position:absolute;top:2px;right:1px;min-width:13px;height:13px;border-radius:7px;background:var(--gold);color:#31412c;font-size:8px;font-weight:700;display:none;align-items:center;justify-content:center;padding:0 3px}
+    @media(max-width:800px){.friends-panel{right:15px;top:86px;width:282px}.net-pill{top:84px;font-size:8px}.locate-arrow{top:112px}.portal-prompt{bottom:130px}}
+    @media(max-width:600px){.friends-panel{right:12px;left:12px;width:auto;top:79px}.net-pill{top:76px}.setup{padding:15px}.exit-card h2{font-size:32px}.portal-prompt{bottom:168px}}
   </style>
 </head>
 <body>
@@ -63,6 +99,11 @@
       <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
       <symbol id="i-jump" viewBox="0 0 24 24"><path d="M12 17V3m-5 5 5-5 5 5M4 20h16"/></symbol>
       <symbol id="i-run" viewBox="0 0 24 24"><circle cx="15" cy="4" r="2"/><path d="m5 9 5-2 5 4 5 1m-9-3-3 6 5 2 1 5M8 15l-5 6"/></symbol>
+      <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v4m-4 0h8"/></symbol>
+      <symbol id="i-mic-off" viewBox="0 0 24 24"><path d="M9 5a3 3 0 0 1 6 0v6M5 11a7 7 0 0 0 11.4 5.4M12 18v4m-4 0h8M4 4l16 16"/></symbol>
+      <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.6a3.5 3.5 0 0 1 0 6.8M21.5 20a6.5 6.5 0 0 0-4.5-6.2"/></symbol>
+      <symbol id="i-exit" viewBox="0 0 24 24"><path d="M14 4H6a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8M10 12h11m-4-4 4 4-4 4"/></symbol>
+      <symbol id="i-google" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 12h8.5M12 12v8.5M12 12l6-6"/></symbol>
     </defs>
   </svg>
 
@@ -75,19 +116,21 @@
       <div class="header-left">
         <div class="brand"><div class="brand-mark"><svg class="icon"><use href="#i-leaf"/></svg></div><div><div class="brand-name">Forest Lobby</div><div class="brand-note">A little room to roam.</div></div></div>
         <div class="brand-divider"></div>
-        <div class="online"><span class="status-dot"></span><span>6 friends online</span></div>
+        <div class="online"><span class="status-dot"></span><span id="online-count">warming up...</span></div>
       </div>
       <div class="session-label"><svg class="icon"><use href="#i-small-leaf"/></svg> THE AUTUMN GROVE</div>
       <div class="header-right">
         <div class="fps"><strong id="fps-value">--</strong> FPS</div>
+        <button class="icon-button" id="mic-button" aria-label="Unmute microphone" aria-pressed="false" title="Microphone"><svg class="icon"><use id="mic-icon" href="#i-mic-off"/></svg></button>
+        <button class="icon-button" id="friends-button" aria-label="Open friends" aria-expanded="false" aria-controls="friends-panel" title="Friends"><svg class="icon"><use href="#i-users"/></svg><span class="badge" id="friends-badge"></span></button>
         <button class="icon-button" id="sound-button" aria-label="Turn forest sounds on" aria-pressed="false" title="Forest sounds"><svg class="icon"><use id="sound-icon" href="#i-mute"/></svg></button>
         <button class="icon-button fullscreen-button" id="fullscreen-button" aria-label="Toggle fullscreen" title="Fullscreen"><svg class="icon"><use href="#i-fullscreen"/></svg></button>
         <div class="header-separator"></div>
         <button class="icon-button" id="settings-button" aria-label="Open settings" aria-expanded="false" aria-controls="settings-panel" title="Settings"><svg class="icon"><use href="#i-settings"/></svg></button>
+        <button class="icon-button danger" id="exit-button" aria-label="Exit game" title="Exit game"><svg class="icon"><use href="#i-exit"/></svg></button>
       </div>
     </header>
-
-    <div class="grove-label"><div>NO QUESTS. NO HURRY.</div><p>Just a good place to be.</p></div>
+    <div class="net-pill offline" id="net-pill"><span class="status-dot"></span><span>LOADING...</span></div>
 
     <section class="panel glass chat-panel" id="chat-panel" aria-label="Local forest chat">
       <div class="panel-heading"><h2><svg class="icon"><use href="#i-chat"/></svg>Forest chat</h2><div class="chat-heading-right"><span class="live-indicator"><span class="status-dot"></span>LIVE</span><button class="panel-toggle" id="chat-toggle" aria-label="Collapse chat panel" aria-expanded="true"><svg class="icon"><use href="#i-chevron"/></svg></button></div></div>
@@ -107,8 +150,18 @@
       <div class="settings-divider"></div>
       <button class="setting-action" id="reset-camera">Reset camera<svg class="icon"><use href="#i-reset"/></svg></button>
       <button class="setting-action" id="return-path">Return to the path<svg class="icon"><use href="#i-compass"/></svg></button>
-      <p class="settings-footnote">A local little world, for now. Your six forest friends are friendly bots. No account needed.</p>
+      <p class="settings-footnote">Account, profile, and friends live in the global backend, separate from world instances - so new locations and extra instances can be added without touching your identity.</p>
     </aside>
+
+    <aside class="friends-panel glass" id="friends-panel" aria-label="Friends" hidden>
+      <div class="settings-title">Friends<button class="icon-button" id="close-friends" aria-label="Close friends"><svg class="icon"><use href="#i-close"/></svg></button></div>
+      <div id="friends-list"></div>
+      <div class="friends-section">NEARBY IN THIS GROVE</div>
+      <div id="nearby-list"></div>
+      <p class="settings-footnote" id="friends-note">Sign in with Google to keep friendships on your account. Guest friendships last for this session only. Locate shows a live arrow when a friend shares your instance.</p>
+    </aside>
+    <div class="locate-arrow" id="locate-arrow" hidden><div class="pointer" id="locate-pointer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5 19 21l-7-4.6L5 21Z"/></svg></div><div class="who" id="locate-text"></div></div>
+    <button class="portal-prompt glass" id="portal-prompt" hidden></button>
 
     <div class="location"><div class="location-mark"><svg class="icon"><use href="#i-compass"/></svg></div><div><div class="location-name">Autumn grove</div><div class="location-caption">Somewhere you can slow down.</div></div></div>
     <div class="controls glass" aria-label="Game controls">
@@ -116,6 +169,7 @@
       <div class="control-item"><svg class="icon"><use href="#i-mouse"/></svg><span>Drag to look</span></div>
       <div class="control-item"><kbd>Shift</kbd><span>Sprint</span></div>
       <div class="control-item"><kbd>Space</kbd><span>Jump</span></div>
+      <div class="control-item"><kbd>E</kbd><span>Portal</span></div>
       <div class="control-item"><kbd>Enter</kbd><span>Chat</span></div>
     </div>
     <div class="build-label">A WORK IN PEACE <span style="opacity:.5;margin:0 5px">/</span> V.01</div>
@@ -127,17 +181,42 @@
   </main>
 
   <section class="entry-screen" id="entry-screen" aria-label="Welcome to Forest Lobby">
-    <div class="entry-content">
+    <div class="entry-content compact">
       <div class="entry-eyebrow">COME AS YOU ARE</div>
       <h1 class="entry-title">Forest Lobby</h1>
       <p class="entry-subtitle">A little world. Better together.</p>
-      <div class="entry-action"><button class="enter-button" id="enter-button">ENTER FOREST<svg class="icon"><use href="#i-arrow"/></svg></button></div>
+      <div class="setup glass" id="setup">
+        <div id="step-auth">
+          <div class="setup-title">SIGN IN TO WANDER TOGETHER</div>
+          <button class="auth-button google" id="google-signin"><svg class="icon"><use href="#i-google"/></svg>Continue with Google</button>
+          <button class="auth-button" id="guest-signin">Continue as guest</button>
+          <p class="auth-note" id="auth-note">Checking connection...</p>
+        </div>
+        <div id="step-profile" hidden>
+          <div class="setup-title">YOUR LITTLE SELF<span id="signed-in-as"></span></div>
+          <div class="field-label">DISPLAY NAME</div>
+          <input class="text-field" id="profile-name" maxlength="20" placeholder="What should we call you?" autocomplete="nickname">
+          <div class="field-label">YOU ARE</div>
+          <div class="seg" id="gender-seg">
+            <button type="button" data-g="male" aria-pressed="false"><span class="gdot" style="background:#87CEFA"></span>Male</button>
+            <button type="button" data-g="female" aria-pressed="false"><span class="gdot" style="background:#FF9ECF"></span>Female</button>
+          </div>
+          <div class="field-label">WHERE ARE YOU FROM?</div>
+          <input class="text-field" id="profile-location" maxlength="40" placeholder="City, country">
+          <div class="field-label">CHOOSE YOUR AVATAR</div>
+          <div class="avatar-grid" id="avatar-grid"></div>
+          <button class="setup-submit" id="save-profile">SAVE PROFILE</button>
+        </div>
+      </div>
+      <div class="entry-action"><button class="enter-button" id="enter-button" disabled>ENTER FOREST<svg class="icon"><use href="#i-arrow"/></svg></button></div>
       <p class="entry-controls">WASD Move<span class="pipe">|</span>Drag Mouse to Look<span class="pipe">|</span>Shift Sprint<span class="pipe">|</span>Space Jump</p>
       <p class="entry-mobile-controls">Joystick to wander. Drag to look. Tap to jump.</p>
-      <p class="entry-ready" id="entry-ready">Finding a sunny spot for you...</p>
+      <p class="entry-ready" id="entry-ready">Sign in and save your profile to enter.</p>
     </div>
     <div class="entry-bottom"><svg class="icon"><use href="#i-small-leaf"/></svg>No rush. You're right where you need to be.</div>
   </section>
+  <div class="portal-overlay" id="portal-overlay" aria-hidden="true"><div><h2 id="portal-title">Opening the way...</h2><p id="portal-copy"></p><button id="portal-close">Stay in the grove</button></div></div>
+  <div class="exit-screen" id="exit-screen" hidden role="dialog" aria-label="You left the forest"><div class="exit-card"><h2>See you soon.</h2><p>Your session ended cleanly: the server was notified, your avatar was removed from the world for everyone else, and your status is now offline.</p><button class="enter-button" id="rejoin-button">RETURN TO THE FOREST<svg class="icon"><use href="#i-arrow"/></svg></button></div></div>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <div class="engine-status" id="engine-status" role="alert" hidden><h2>A small detour.</h2><p id="engine-error">The forest needs WebGL and an internet connection to load Three.js. Please check your connection and enable hardware acceleration.</p><button id="reload-button">Try again</button></div>
 
@@ -191,6 +270,63 @@
     import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
 
     const $ = id => document.getElementById(id);
+
+    // ================================================================
+    // SCALABILITY & INFRASTRUCTURE (read before deploying)
+    // ----------------------------------------------------------------
+    // GLOBAL BACKEND (identity, profiles, friends)  - Supabase
+    //   Auth: Google OAuth via Supabase Auth (free tier).
+    //   DB:   Postgres tables `profiles` and `friendships` (free tier).
+    // WORLD LAYER (real-time position/presence)     - Supabase Realtime
+    //   One channel per world instance: world:<location>:<n>.
+    //   Players are routed to the least-crowded instance (soft cap
+    //   below), so 5,000 users = ~125 instances of ~40, never one scene.
+    // HONEST FREE-TIER LIMITS:
+    //   Supabase free tier supports roughly 200-500 concurrent realtime
+    //   connections and limited messages/sec. That is enough for
+    //   development and small playtests - NOT for 5,000 CCU.
+    // PRODUCTION PATH (paid or self-hosted):
+    //   Replace joinWorld()'s transport with Colyseus/Nakama rooms on a
+    //   small VM cluster behind a load balancer (~10-15 nodes for 5k),
+    //   and voice with a self-hosted SFU (LiveKit) per instance. All
+    //   code above the transport (profiles, friends, UI) is unchanged.
+    // SQL schema for the global backend:
+    //   create table profiles (id uuid primary key references auth.users,
+    //     name text, gender text, location text, avatar text,
+    //     updated_at timestamptz default now());
+    //   create table friendships (user_id uuid references profiles(id),
+    //     friend_id uuid references profiles(id),
+    //     created_at timestamptz default now(),
+    //     primary key (user_id, friend_id));
+    //   (Enable RLS: profiles readable by all, writable by owner;
+    //    friendships readable/writable where auth.uid() is a member.)
+    // ================================================================
+    const CONFIG = {
+      // Google OAuth Client ID (public by design - safe in client code).
+      // NEVER put the client SECRET here: it belongs ONLY in the Supabase
+      // dashboard (Authentication -> Providers -> Google -> Client Secret).
+      // Google Cloud Console checklist for this client ID:
+      //   1. APIs & Services -> Credentials -> your OAuth client
+      //   2. "Authorized JavaScript origins": add the exact origin you
+      //      serve this file from, e.g. http://localhost:5500 and
+      //      https://yourdomain.com  (file:// will NOT work - use a server)
+      //   3. When you create the Supabase project, also add
+      //      https://<your-ref>.supabase.co/auth/v1/callback
+      //      to "Authorized redirect URIs", and paste the client ID +
+      //      secret into Supabase's Google provider settings. Add this
+      //      client ID to Supabase's "Authorized Client IDs" too so the
+      //      one-tap ID token is accepted.
+      GOOGLE_CLIENT_ID: '182372103376-hghlq44c9kgtc6gfdj6dlmucd30nrbem.apps.googleusercontent.com',
+      SUPABASE_URL: 'https://fkcldwybekbhayvexpme.supabase.co',
+      SUPABASE_ANON_KEY: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZrY2xkd3liZWtiaGF5dmV4cG1lIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTEwNTk0NzMsImV4cCI6MjEwNjYzNTQ3M30.MFx3Iak6PeGqw2kVWC8MycUm4mfxHSnaixkofkzL1gA',
+      WORLD_ID: 'garden',
+      INSTANCES: 3,          // garden instances available; raise as population grows
+      INSTANCE_CAP: 150,     // everyone shares instance 1 until it gets this crowded
+      POS_RATE_MS: 120,      // ~8 Hz position broadcast, only when moving
+      INTEREST_RADIUS: 999,  // see every player in your instance (whole 120 m grove)
+      VOICE_RADIUS: 18, VOICE_DROP: 24, MAX_VOICE_PEERS: 8,
+    };
+
     try { startForest(); } catch (error) {
       console.error('Forest initialization:', error);
       window.forestLoadFailed = true;
@@ -446,6 +582,45 @@
         ray.position.set(-9 + i * 6.5, 14, -12 + i * 4); ray.rotation.z = .49; ray.rotation.y = -.13; ray.renderOrder = 2; scene.add(ray);
       }
 
+      // ---- Four portals to future worlds ----------------------------
+      // Destinations are pure configuration: when a destination world
+      // ships, flip `open:true` in WORLD_DIRECTORY and the existing
+      // transition + instance routing takes over. No rebuild required.
+      const WORLD_DIRECTORY = {
+        garden: { name: 'The Autumn Grove', open: true },
+        future1: { name: 'Future World 1', open: false },
+        future2: { name: 'Future World 2', open: false },
+        future3: { name: 'Future World 3', open: false },
+        future4: { name: 'Future World 4', open: false },
+      };
+      const portals = [];
+      const portalRim = new THREE.TorusGeometry(1.55, .13, 7, 22);
+      const portalDiscGeometry = new THREE.CircleGeometry(1.4, 22);
+      [
+        { dest: 'future1', color: '#6fc3ff', x: pathX(-50), z: -50, face: 0 },
+        { dest: 'future2', color: '#ff9d5c', x: 33, z: 29, face: -.8 },
+        { dest: 'future3', color: '#c79bff', x: -32, z: 22, face: .9 },
+        { dest: 'future4', color: '#7de3a0', x: 11, z: 45, face: Math.PI },
+      ].forEach((def, index) => {
+        const y = surfaceAt(def.x, def.z), group = new THREE.Group();
+        group.position.set(def.x, y, def.z); group.rotation.y = def.face;
+        const rim = new THREE.Mesh(portalRim, mat(def.color, { emissive: def.color, emissiveIntensity: .4 }));
+        rim.position.y = 1.9; rim.castShadow = true; group.add(rim);
+        const disc = new THREE.Mesh(portalDiscGeometry, new THREE.MeshBasicMaterial({ color: def.color, transparent: true, opacity: .32, side: THREE.DoubleSide, depthWrite: false }));
+        disc.position.y = 1.9; group.add(disc);
+        for (const side of [-1, 1]) {
+          const stone = new THREE.Mesh(rockGeometry, mat('#7d8880'));
+          stone.position.set(side * 1.55, .3, 0); stone.scale.set(.55, .85, .5); stone.castShadow = true; group.add(stone);
+          obstacles.push({ x: def.x + side * 1.55 * Math.cos(def.face), z: def.z - side * 1.55 * Math.sin(def.face), radius: .6 });
+        }
+        const tagElement = document.createElement('div'); tagElement.className = 'nametag';
+        const tagDot = document.createElement('span'); tagDot.className = 'nametag-dot'; tagDot.style.background = def.color;
+        tagElement.append(tagDot, document.createTextNode(WORLD_DIRECTORY[def.dest].name));
+        const tag = new CSS2DObject(tagElement); tag.position.set(0, 3.8, 0); group.add(tag);
+        scene.add(group);
+        portals.push({ ...def, group, disc, tag, index });
+      });
+
       function meadowSpot(radius = 51, margin = 3.7) {
         for (let attempt = 0; attempt < 60; attempt++) {
           const a = rand() * Math.PI * 2, r = Math.sqrt(rand()) * radius;
@@ -593,32 +768,57 @@
         const text = document.createElement('span'); text.textContent = name; element.append(dot, text);
         const label = new CSS2DObject(element); label.position.set(0, 2.15, 0); root.add(label); return label;
       }
-      const playerAvatar = character('#75bce8'), player = playerAvatar.root;
+      let playerAvatar = character('#75bce8');
+      const player = playerAvatar.root;
       const spawn = new THREE.Vector3(pathX(21), surfaceAt(pathX(21), 21) + .01, 21);
       player.position.copy(spawn); player.rotation.y = Math.PI; scene.add(player);
       const playerLabel = addName(player, 'You', '#b4d8f1', true);
       const playerState = { velocity: new THREE.Vector3(), vy: 0, grounded: true, moving: false, sprinting: false, mixer: null, model: null, actions: {}, activeAction: null, originalModel: null, hasIdleClip: false };
-      const names = ['Alex', 'Sam', 'Mika', 'Jun', 'Leo', 'Zara'];
-      const botColors = ['#81b8e8', '#ed8875', '#90c17b', '#eaa05f', '#bba0d7', '#e5c765'];
-      const messageColors = ['#a9cfe6', '#eaa69c', '#b3d293', '#ebbf91', '#c9b5e5', '#e4d49a'];
-      // TODO: Replace bot array with Supabase Presence for real multiplayer
-      const bots = [];
-      // TODO: Add Trystero P2P for proximity voice chat
-      const initialBotZ = [10, 4, -6, 15, -17, -1];
-      function chooseTarget(bot) {
-        let x, z;
-        for (let tries = 0; tries < 20; tries++) {
-          if (rand() < .82) { z = between(-34, 29); x = pathX(z) + between(-2.4, 2.4); }
-          else { const tree = treePositions[Math.floor(rand() * treePositions.length)]; x = tree.x + between(-4, 4); z = tree.z + between(-4, 4); }
-          if (!obstacles.some(o => Math.hypot(x - o.x, z - o.z) < o.radius + .85)) break;
-        }
-        bot.target.set(x, 0, z);
+
+      // ---- Avatar catalogue: selection is synced to every player ----
+      const AVATARS = [
+        { id: 'robin', name: 'Robin', color: '#75bce8' },
+        { id: 'poppy', name: 'Poppy', color: '#ed8875' },
+        { id: 'fern', name: 'Fern', color: '#90c17b', brim: true },
+        { id: 'maple', name: 'Maple', color: '#eaa05f', hat: true },
+        { id: 'iris', name: 'Iris', color: '#bba0d7', brim: true },
+        { id: 'sunny', name: 'Sunny', color: '#e5c765', hat: true },
+      ];
+      const genderColor = g => g === 'male' ? '#87CEFA' : g === 'female' ? '#FF9ECF' : '#b4d8f1';
+      function buildAvatar(id) {
+        const def = AVATARS.find(a => a.id === id) || AVATARS[0];
+        const avatar = character(def.color);
+        if (def.hat) { const cone = new THREE.Mesh(new THREE.ConeGeometry(.3, .4, 7), mat('#b96e42')); cone.position.y = 1.68; cone.castShadow = true; avatar.visual.add(cone); }
+        if (def.brim) { const brim = new THREE.Mesh(new THREE.TorusGeometry(.3, .065, 5, 11), mat('#f0e3b0')); brim.rotation.x = Math.PI / 2; brim.position.y = 1.56; avatar.visual.add(brim); }
+        return avatar;
       }
-      for (let i = 0; i < 6; i++) {
-        const avatar = character(botColors[i]), z = initialBotZ[i], x = pathX(z) + (i % 2 ? 1.9 : -1.65);
-        avatar.root.position.set(x, surfaceAt(x, z), z); avatar.root.rotation.y = between(-Math.PI, Math.PI); scene.add(avatar.root);
-        const bot = { ...avatar, name: names[i], label: addName(avatar.root, names[i], botColors[i]), target: new THREE.Vector3(), speed: between(1.5, 2.5), pause: between(2, 5), groundTimer: 0, groundY: surfaceAt(x, z), walking: false, phase: between(0, 6.28), stuck: 0 };
-        chooseTarget(bot); bots.push(bot);
+      function setPlayerAvatar(id) { const fresh = buildAvatar(id); player.remove(playerAvatar.visual); player.add(fresh.visual); playerAvatar = { ...fresh, root: player }; }
+      function setPlayerIdentity(name, gender) { playerLabel.element.lastChild.textContent = name || 'You'; playerLabel.element.firstChild.style.background = genderColor(gender); }
+
+      // ---- Remote players: real network peers only, never local NPCs.
+      // Spawned from presence joins, removed on presence leave (normal
+      // exit AND disconnect), plus a 15 s staleness purge for silent
+      // connection loss. Reconnection simply re-tracks presence.
+      const remotes = new Map();
+      function spawnRemote(uid, meta = {}) {
+        let remote = remotes.get(uid);
+        if (remote) {
+          remote.mic = !!meta.mic;
+          if (meta.name && meta.name !== remote.name) { remote.name = meta.name; remote.label.element.lastChild.textContent = meta.name; }
+          return remote;
+        }
+        const avatar = buildAvatar(meta.a);
+        const x = meta.x ?? spawn.x + between(-2, 2), z = meta.z ?? spawn.z + between(-2, 2);
+        avatar.root.position.set(x, surfaceAt(x, z), z); scene.add(avatar.root);
+        remote = { ...avatar, uid, name: meta.name || 'Wanderer', gender: meta.g, mic: !!meta.mic, label: addName(avatar.root, meta.name || 'Wanderer', genderColor(meta.g)), target: new THREE.Vector3(x, 0, z), ry: 0, moving: false, synced: false, groundTimer: 0, groundY: surfaceAt(x, z), phase: Math.random() * 6.28, lastSeen: time };
+        remotes.set(uid, remote); updateOnlineCount(); renderFriends();
+        return remote;
+      }
+      function removeRemote(uid) {
+        const remote = remotes.get(uid); if (!remote) return;
+        scene.remove(remote.root); remote.label.element.remove(); remotes.delete(uid);
+        try { VOICE.closePeer(uid); } catch (_) {}
+        updateOnlineCount(); renderFriends();
       }
       function animateBean(avatar, time, moving, sprint = false) {
         const phase = time * (sprint ? 13 : 8), amount = moving ? .65 : .025;
@@ -656,20 +856,16 @@
         while (feed.children.length > 50) feed.firstElementChild.remove();
         if (follow || name === 'You') feed.scrollTop = feed.scrollHeight;
       }
-      appendMessage('Alex', 'this forest is so cozy!', messageColors[0], 2);
-      appendMessage('Sam', 'anyone near the big rock?', messageColors[1], 1);
-      appendMessage('Jun', 'taking the scenic route.', messageColors[3]);
-      const chatLines = ['the light through these trees...', 'found the little pink flowers!', 'no plans. just wandering.', 'anyone near the big rock?', 'this forest is so cozy!', 'the mushrooms are tiny umbrellas', 'race you down the path? very slowly.', 'glad we found this place.', 'the autumn trees are my favorite', 'taking a little breather here.', 'follow the path, see where it goes'];
-      let nextChat = between(8, 15), replyTimer;
+      appendMessage('Grove', 'Welcome, wanderer. Chat reaches everyone in your grove instance once you are connected.', '#c9d8bb');
       $('chat-form').addEventListener('submit', event => {
         event.preventDefault(); const value = $('chat-input').value.trim(); if (!value) return;
         appendMessage('You', value, '#e8d09b'); $('chat-input').value = ''; $('chat-input').blur();
-        clearTimeout(replyTimer);
-        replyTimer = setTimeout(() => { const i = Math.floor(rand() * 6); appendMessage(names[i], ['hey! happy you are here.', 'welcome to our little corner.', 'come wander with us!', 'see you on the path!'][Math.floor(rand() * 4)], messageColors[i]); }, between(2400, 4200));
+        if (NET.channel) { try { NET.channel.send({ type: 'broadcast', event: 'chat', payload: { n: ME.name || 'Wanderer', t: value.slice(0, 180) } }); } catch (_) {} }
+        else appendMessage('Grove', 'Offline preview: only you can read this. Add Supabase keys in CONFIG to go live.', '#c9d8bb');
       });
 
       const keys = new Set(), touchMove = new THREE.Vector2();
-      let touchSprint = false, jumpQueued = false, yaw = .06, pitch = .255, cameraDistance = 4;
+      let touchSprint = false, jumpQueued = false, interactQueued = false, yaw = .06, pitch = .255, cameraDistance = 4;
       let dragging = false, dragId = null, lastPointerX = 0, lastPointerY = 0;
       let lookTarget = new THREE.Vector3(), enteredAt = -1, time = 0;
       const moveVector = new THREE.Vector3(), cameraForward = new THREE.Vector3(), cameraRight = new THREE.Vector3(), targetQuaternion = new THREE.Quaternion();
@@ -683,12 +879,13 @@
         if (event.code === 'Enter') {
           event.preventDefault(); $('chat-panel').classList.remove('collapsed'); $('chat-toggle').setAttribute('aria-expanded', 'true'); $('chat-toggle').setAttribute('aria-label', 'Collapse chat panel'); $('chat-input').focus(); keys.clear(); return;
         }
+        if (event.code === 'KeyE' && !event.repeat) { interactQueued = true; return; }
         if (['KeyW','KeyA','KeyS','KeyD','ArrowUp','ArrowDown','ArrowLeft','ArrowRight','Space','ShiftLeft','ShiftRight'].includes(event.code)) {
           event.preventDefault(); keys.add(event.code); if (event.code === 'Space' && !event.repeat) jumpQueued = true;
         }
       });
       window.addEventListener('keyup', event => keys.delete(event.code));
-      function releaseInput() { keys.clear(); touchMove.set(0, 0); touchSprint = false; dragging = false; dragId = null; joystickId = null; jumpQueued = false; $('joystick-knob').style.transform = ''; $('touch-sprint').classList.remove('pressed'); }
+      function releaseInput() { keys.clear(); touchMove.set(0, 0); touchSprint = false; dragging = false; dragId = null; joystickId = null; jumpQueued = false; interactQueued = false; $('joystick-knob').style.transform = ''; $('touch-sprint').classList.remove('pressed'); }
       window.addEventListener('blur', releaseInput);
       document.addEventListener('visibilitychange', () => { if (document.hidden) releaseInput(); });
       $('hud').addEventListener('focusin', event => { if (isTyping(event.target)) keys.clear(); });
@@ -757,41 +954,70 @@
         if (playerAvatar.visual.visible) animateBean(playerAvatar, time, moving, sprint);
         animationState(moving, sprint); if (playerState.mixer) playerState.mixer.update(dt);
       }
-      const botDirection = new THREE.Vector3();
-      function updateBots(dt) {
-        for (const bot of bots) {
-          bot.walking = false;
-          if (bot.pause > 0) bot.pause -= dt;
-          else {
-            botDirection.subVectors(bot.target, bot.root.position); botDirection.y = 0;
-            if (botDirection.length() < .7 || bot.stuck > 28) { bot.pause = between(2, 5); bot.stuck = 0; chooseTarget(bot); }
-            else {
-              botDirection.normalize();
-              const dx = bot.root.position.x - player.position.x, dz = bot.root.position.z - player.position.z, distance = Math.hypot(dx, dz);
-              if (distance < 2.7 && distance > .01) { const avoid = (2.7 - distance) * 1.7; botDirection.x += dx / distance * avoid; botDirection.z += dz / distance * avoid; }
-              for (const other of bots) {
-                if (other === bot) continue;
-                const bx = bot.root.position.x - other.root.position.x, bz = bot.root.position.z - other.root.position.z, bd = Math.hypot(bx, bz);
-                if (bd < 1.2 && bd > .01) { botDirection.x += bx / bd * (1.2 - bd); botDirection.z += bz / bd * (1.2 - bd); }
-              }
-              botDirection.normalize(); bot.root.position.addScaledVector(botDirection, bot.speed * dt); resolveObstacles(bot.root.position, .47);
-              targetQuaternion.setFromAxisAngle(up, Math.atan2(botDirection.x, botDirection.z)); bot.root.quaternion.slerp(targetQuaternion, 1 - Math.exp(-7 * dt));
-              bot.walking = true; bot.stuck += dt;
-            }
-          }
-          const awayX = bot.root.position.x - player.position.x, awayZ = bot.root.position.z - player.position.z, playerDistance = Math.hypot(awayX, awayZ);
-          if (playerDistance < 2 && playerDistance > .001) {
-            const stepAway = Math.min(2 - playerDistance, bot.speed * dt);
-            bot.root.position.x += awayX / playerDistance * stepAway; bot.root.position.z += awayZ / playerDistance * stepAway;
-            resolveObstacles(bot.root.position, .47); bot.walking = true;
-          }
-          bot.groundTimer -= dt;
-          if (bot.groundTimer <= 0) { bot.groundY = raycastGround(bot.root.position.x, bot.root.position.z, bot.root.position.y); bot.groundTimer = .14; }
-          bot.root.position.y = THREE.MathUtils.lerp(bot.root.position.y, bot.groundY, 1 - Math.exp(-24 * dt));
-          animateBean(bot, time + bot.phase, bot.walking);
-          bot.label.visible = settings.tags && bot.root.position.distanceToSquared(camera.position) < 46 * 46;
+      function updateRemotePlayers(dt) {
+        const k = 1 - Math.exp(-10 * dt);
+        for (const [uid, remote] of remotes) {
+          if (remote.synced && time - remote.lastSeen > 20) { removeRemote(uid); continue; } // purge only truly dead links (idle players heartbeat every 5 s)
+          const dx = remote.target.x - remote.root.position.x, dz = remote.target.z - remote.root.position.z;
+          remote.root.position.x += dx * k; remote.root.position.z += dz * k;
+          const walking = remote.moving || dx * dx + dz * dz > .02;
+          if (walking && dx * dx + dz * dz > 1e-4) targetQuaternion.setFromAxisAngle(up, Math.atan2(dx, dz));
+          else targetQuaternion.setFromAxisAngle(up, remote.ry || 0);
+          remote.root.quaternion.slerp(targetQuaternion, k);
+          remote.groundTimer -= dt;
+          if (remote.groundTimer <= 0) { remote.groundY = raycastGround(remote.root.position.x, remote.root.position.z, remote.root.position.y); remote.groundTimer = .16; }
+          remote.root.position.y = THREE.MathUtils.lerp(remote.root.position.y, remote.groundY, 1 - Math.exp(-20 * dt));
+          // Interest management: distant players stay registered but are not rendered or animated.
+          const d2 = remote.root.position.distanceToSquared(player.position);
+          remote.root.visible = d2 < CONFIG.INTEREST_RADIUS * CONFIG.INTEREST_RADIUS;
+          if (remote.root.visible) animateBean(remote, time + remote.phase, walking);
+          remote.label.visible = settings.tags && remote.root.visible && remote.root.position.distanceToSquared(camera.position) < 46 * 46;
         }
         playerLabel.visible = settings.tags && window.forestEntered;
+      }
+      let activePortal = null;
+      function updatePortals(dt) {
+        for (const portal of portals) {
+          portal.disc.material.opacity = .26 + .13 * Math.sin(time * 2 + portal.index * 1.7);
+          portal.disc.rotation.z += dt * .4;
+          portal.tag.visible = portal.group.position.distanceToSquared(camera.position) < 55 * 55;
+        }
+        if (!window.forestEntered) { $('portal-prompt').hidden = true; activePortal = null; interactQueued = false; return; }
+        let nearest = null, best = 7.3; // squared distance ~2.7 m trigger
+        for (const portal of portals) {
+          const d2 = (portal.x - player.position.x) ** 2 + (portal.z - player.position.z) ** 2;
+          if (d2 < best) { best = d2; nearest = portal; }
+        }
+        if (nearest !== activePortal) {
+          activePortal = nearest;
+          const prompt = $('portal-prompt'); prompt.textContent = '';
+          if (nearest) {
+            const kbd = document.createElement('kbd'); kbd.textContent = 'E';
+            prompt.append(kbd, document.createTextNode(' Enter ' + WORLD_DIRECTORY[nearest.dest].name + (isTouch ? ' - tap here' : '')));
+            prompt.hidden = false;
+          } else prompt.hidden = true;
+        }
+        if (interactQueued && activePortal) enterPortal(activePortal);
+        interactQueued = false;
+      }
+      function updateLocate() {
+        const el = $('locate-arrow'), target = FRIENDS.locating;
+        if (!target || !window.forestEntered) { el.hidden = true; return; }
+        const info = NET.online.get(target.uid);
+        if (!info) { el.hidden = true; FRIENDS.locating = null; toast(target.name + ' went offline.'); renderFriends(); return; }
+        if (info.w !== NET.world || info.i !== NET.instance) {
+          // Friend is in a different world/instance: say so instead of drawing an invalid arrow.
+          el.hidden = false; $('locate-pointer').style.visibility = 'hidden';
+          $('locate-text').textContent = target.name + ' is in ' + (WORLD_DIRECTORY[info.w] ? WORLD_DIRECTORY[info.w].name : 'another world') + ' · Instance ' + (info.i || 1);
+          return;
+        }
+        const live = remotes.get(target.uid);
+        const tx = live ? live.root.position.x : info.x, tz = live ? live.root.position.z : info.z;
+        const dx = tx - player.position.x, dz = tz - player.position.z, distance = Math.hypot(dx, dz);
+        if (distance < 5) { el.hidden = true; return; } // hidden within 5 m; reappears past it while locating
+        el.hidden = false; $('locate-pointer').style.visibility = '';
+        $('locate-pointer').style.transform = 'rotate(' + ((yaw + Math.PI) - Math.atan2(dx, dz)).toFixed(3) + 'rad)';
+        $('locate-text').textContent = target.name + ' · ' + Math.round(distance) + ' m';
       }
 
       const previewPosition = new THREE.Vector3(spawn.x + 1.7, spawn.y + 6.8, spawn.z + 14.5);
@@ -820,6 +1046,453 @@
       }
 
       window.addEventListener('dragover', event => event.preventDefault()); window.addEventListener('drop', event => event.preventDefault());
+
+      // ================================================================
+      // SOCIAL PLATFORM LAYER - every module below is swappable:
+      //   identity/auth -> Supabase Auth (Google) with guest fallback
+      //   player DB     -> Supabase Postgres (profiles, friendships)
+      //   world sync    -> Supabase Realtime presence+broadcast per
+      //                    instance channel (swap for Colyseus/Nakama
+      //                    rooms in production without touching the UI)
+      //   voice         -> WebRTC P2P mesh, proximity gated (swap for a
+      //                    LiveKit SFU per instance at scale)
+      // ================================================================
+      const ME = { uid: 'guest-' + Math.random().toString(36).slice(2, 10), guest: true, name: '', gender: '', location: '', avatar: 'robin', ready: false };
+      const NET = { sb: null, mode: 'offline', world: CONFIG.WORLD_ID, instance: 1, channel: null, lobby: null, online: new Map() };
+      const FRIENDS = { list: new Map(), locating: null };
+      let netAccum = 0, lobbyAccum = 0, voiceAccum = 0, sinceSent = 0, lastSent = { x: 0, z: 0, r: 0 };
+      const worldLabel = () => (WORLD_DIRECTORY[NET.world] || { name: NET.world }).name;
+      const presenceMeta = () => ({ name: ME.name || 'Wanderer', g: ME.gender, a: ME.avatar, mic: VOICE.on && !VOICE.muted ? 1 : 0, x: +player.position.x.toFixed(1), z: +player.position.z.toFixed(1) });
+      const lobbyMeta = () => ({ n: ME.name || 'Wanderer', g: ME.gender, w: NET.world, i: NET.instance, x: Math.round(player.position.x), z: Math.round(player.position.z) });
+
+      function setNetStatus(mode, extra) {
+        NET.mode = mode;
+        const pill = $('net-pill'); pill.className = 'net-pill ' + mode;
+        pill.lastChild.textContent = {
+          offline: 'OFFLINE PREVIEW · ADD FREE SUPABASE KEYS IN CONFIG TO GO LIVE',
+          ready: 'BACKEND CONNECTED · ENTER TO JOIN AN INSTANCE',
+          online: extra || 'LIVE',
+          reconnecting: 'RECONNECTING...',
+        }[mode] || mode;
+      }
+      function updateOnlineCount() {
+        const here = remotes.size + (window.forestEntered ? 1 : 0);
+        const total = Math.max(NET.online.size, here);
+        $('online-count').textContent = NET.mode === 'offline' ? 'offline preview' : total + ' online · ' + here + ' in this grove';
+        if (NET.mode === 'online') setNetStatus('online', worldLabel().toUpperCase() + ' · INSTANCE ' + NET.instance + ' · ' + here + ' HERE');
+      }
+
+      // ---- Identity & profile ----------------------------------------
+      async function initBackend() {
+        if (!CONFIG.SUPABASE_URL || !CONFIG.SUPABASE_ANON_KEY) {
+          setNetStatus('offline');
+          $('auth-note').textContent = 'Google sign-in is connected (client ID configured). Live multiplayer and saved friends still need a free Supabase project: paste its URL + anon key into CONFIG at the top of the script.';
+          return;
+        }
+        try {
+          const { createClient } = await import('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm');
+          NET.sb = createClient(CONFIG.SUPABASE_URL, CONFIG.SUPABASE_ANON_KEY, { realtime: { params: { eventsPerSecond: 12 } } });
+          setNetStatus('ready');
+          $('auth-note').textContent = 'Google sign-in saves your profile and friends to your account. Guests still get live multiplayer, but friendships last one session.';
+          NET.sb.auth.onAuthStateChange((_event, session) => { if (session && ME.guest) onSignedIn(session.user); });
+          const { data } = await NET.sb.auth.getSession();
+          if (data && data.session) await onSignedIn(data.session.user);
+        } catch (error) { console.warn('Backend init:', error); setNetStatus('offline'); $('auth-note').textContent = 'Could not reach the backend. You can continue as a guest in offline preview.'; }
+      }
+      async function onSignedIn(user) {
+        ME.uid = user.id; ME.guest = false;
+        $('signed-in-as').textContent = user.email || 'signed in';
+        try {
+          const { data } = await NET.sb.from('profiles').select('name,gender,location,avatar').eq('id', ME.uid).maybeSingle();
+          if (data) { $('profile-name').value = data.name || ''; selectGender(data.gender); $('profile-location').value = data.location || ''; selectAvatarCard(data.avatar); }
+        } catch (_) {}
+        showStep('profile'); loadFriends();
+      }
+      function showStep(step) { $('step-auth').hidden = step !== 'auth'; $('step-profile').hidden = step !== 'profile'; }
+      // ---- Google Identity Services: works with just the client ID.
+      // With Supabase configured, the Google ID token is exchanged for a
+      // Supabase session (profiles + friends persist). Without Supabase,
+      // you still get a verified Google identity for this session.
+      function loadGIS() {
+        return new Promise((resolve, reject) => {
+          if (window.google && window.google.accounts && window.google.accounts.id) return resolve();
+          const script = document.createElement('script');
+          script.src = 'https://accounts.google.com/gsi/client'; script.async = true;
+          script.onload = () => resolve(); script.onerror = () => reject(new Error('Could not load Google Sign-In.'));
+          document.head.append(script);
+        });
+      }
+      const decodeJwt = token => { try { return JSON.parse(atob(token.split('.')[1].replace(/-/g, '+').replace(/_/g, '/'))); } catch (_) { return null; } };
+      async function onGoogleCredential(response) {
+        const token = response && response.credential; if (!token) return;
+        if (NET.sb) {
+          try {
+            const { data, error } = await NET.sb.auth.signInWithIdToken({ provider: 'google', token });
+            if (error) throw error;
+            if (data && data.user) { await onSignedIn(data.user); toast('Signed in with Google.'); return; }
+          } catch (error) {
+            console.warn('Supabase ID-token sign-in:', error);
+            toast('Supabase rejected the Google token - add this client ID to "Authorized Client IDs" in Supabase\'s Google provider settings. Using local sign-in for now.');
+          }
+        }
+        const claims = decodeJwt(token);
+        if (!claims) { toast('Could not read the Google sign-in response.'); return; }
+        // Verified Google identity, no backend: stable uid, session-only persistence.
+        ME.uid = 'google-' + claims.sub;
+        $('signed-in-as').textContent = claims.email || claims.name || 'Google account';
+        if (!$('profile-name').value && (claims.given_name || claims.name)) $('profile-name').value = String(claims.given_name || claims.name).slice(0, 20);
+        showStep('profile');
+        if (!NET.sb) toast('Signed in with Google. Add free Supabase keys in CONFIG to store friends and go live.');
+      }
+      async function initGoogleButton() {
+        if (!CONFIG.GOOGLE_CLIENT_ID) return;
+        if (location.protocol === 'file:') { $('auth-note').textContent = 'Google Sign-In cannot run from a file:// page. Serve this file (e.g. npx serve, VS Code Live Server, or any static host) and add that origin to "Authorized JavaScript origins" in Google Cloud Console.'; return; }
+        try {
+          await loadGIS();
+          google.accounts.id.initialize({ client_id: CONFIG.GOOGLE_CLIENT_ID, callback: onGoogleCredential, auto_select: false, use_fedcm_for_prompt: true });
+          const custom = $('google-signin'), host = document.createElement('div');
+          host.id = 'google-btn-host'; host.style.cssText = 'margin-bottom:9px;min-height:44px;display:flex;justify-content:center';
+          custom.before(host);
+          google.accounts.id.renderButton(host, { theme: 'filled_black', size: 'large', text: 'continue_with', shape: 'rect', logo_alignment: 'left', width: Math.min(394, host.clientWidth || 394) });
+          custom.hidden = true;
+        } catch (error) { console.warn('Google button:', error); }
+      }
+      initGoogleButton();
+      $('google-signin').addEventListener('click', async () => {
+        // Fallback path if the official Google button could not render.
+        try { await loadGIS(); google.accounts.id.initialize({ client_id: CONFIG.GOOGLE_CLIENT_ID, callback: onGoogleCredential, use_fedcm_for_prompt: true }); google.accounts.id.prompt(); return; } catch (_) {}
+        if (!NET.sb) { toast('Google sign-in is unavailable right now. Continuing as guest instead.'); showStep('profile'); return; }
+        try { await NET.sb.auth.signInWithOAuth({ provider: 'google', options: { redirectTo: location.origin + location.pathname } }); }
+        catch (error) { toast('Google sign-in failed: ' + (error.message || 'provider not enabled in Supabase yet.')); }
+      });
+      $('guest-signin').addEventListener('click', () => showStep('profile'));
+      let chosenGender = '';
+      function selectGender(g) { chosenGender = g || ''; for (const b of $('gender-seg').children) b.setAttribute('aria-pressed', String(b.dataset.g === chosenGender)); }
+      $('gender-seg').addEventListener('click', event => { const b = event.target.closest('button'); if (b) selectGender(b.dataset.g); });
+      for (const def of AVATARS) {
+        const card = document.createElement('button'); card.type = 'button'; card.className = 'avatar-card'; card.dataset.avatar = def.id;
+        card.setAttribute('aria-pressed', 'false'); card.setAttribute('aria-label', 'Avatar ' + def.name);
+        const swatch = document.createElement('span'); swatch.className = 'swatch'; swatch.style.background = def.color;
+        const label = document.createElement('span'); label.textContent = def.name;
+        card.append(swatch, label); $('avatar-grid').append(card);
+      }
+      function selectAvatarCard(id) { if (!AVATARS.some(a => a.id === id)) return; ME.avatar = id; for (const c of $('avatar-grid').children) c.setAttribute('aria-pressed', String(c.dataset.avatar === id)); }
+      $('avatar-grid').addEventListener('click', event => { const card = event.target.closest('.avatar-card'); if (card) selectAvatarCard(card.dataset.avatar); });
+      selectAvatarCard('robin'); selectGender('female');
+      try { const saved = JSON.parse(localStorage.getItem('forest-profile') || 'null'); if (saved) { $('profile-name').value = saved.name || ''; selectGender(saved.gender); $('profile-location').value = saved.location || ''; selectAvatarCard(saved.avatar); } } catch (_) {}
+      $('save-profile').addEventListener('click', async () => {
+        const name = $('profile-name').value.trim();
+        if (!name) { toast('Pick a display name first.'); $('profile-name').focus(); return; }
+        if (!chosenGender) { toast('Choose male or female so others see your dot colour.'); return; }
+        ME.name = name; ME.gender = chosenGender; ME.location = $('profile-location').value.trim(); ME.ready = true;
+        try { localStorage.setItem('forest-profile', JSON.stringify({ name: ME.name, gender: ME.gender, location: ME.location, avatar: ME.avatar })); } catch (_) {}
+        if (NET.sb && !ME.guest) { try { await NET.sb.from('profiles').upsert({ id: ME.uid, name: ME.name, gender: ME.gender, location: ME.location, avatar: ME.avatar }); } catch (error) { console.warn('Profile save:', error); } }
+        setPlayerAvatar(ME.avatar); setPlayerIdentity(ME.name, ME.gender);
+        $('enter-button').disabled = false;
+        $('entry-ready').textContent = 'Profile saved. The grove is waiting, ' + ME.name + '.';
+        toast('Looking good, ' + ME.name + '.');
+      });
+
+      // ---- World instances (server rooms) -----------------------------
+      async function joinWorld(world, instance) {
+        if (!NET.sb) return;
+        await leaveChannel();
+        NET.world = world; NET.instance = instance;
+        const channel = NET.sb.channel('world:' + world + ':' + instance, { config: { presence: { key: ME.uid }, broadcast: { self: false } } });
+        NET.channel = channel;
+        channel.on('presence', { event: 'sync' }, () => {
+          const state = channel.presenceState(), seen = new Set();
+          for (const uid in state) { if (uid === ME.uid) continue; seen.add(uid); spawnRemote(uid, state[uid][0]); }
+          for (const uid of [...remotes.keys()]) if (!seen.has(uid)) removeRemote(uid); // exits AND disconnects vanish here
+          updateOnlineCount();
+        });
+        channel.on('broadcast', { event: 'pos' }, ({ payload: p }) => {
+          const remote = remotes.get(p.u); if (!remote) return;
+          remote.target.set(p.x, 0, p.z); remote.ry = p.r; remote.moving = !!p.m; remote.synced = true; remote.lastSeen = time;
+        });
+        channel.on('broadcast', { event: 'chat' }, ({ payload: p }) => appendMessage(p.n || 'Wanderer', String(p.t || '').slice(0, 180), '#a9cfe6'));
+        channel.on('broadcast', { event: 'rtc' }, ({ payload: p }) => { if (p && p.to === ME.uid) VOICE.onSignal(p); });
+        channel.subscribe(async status => {
+          if (status === 'SUBSCRIBED') {
+            try { await channel.track(presenceMeta()); } catch (_) {}
+            setNetStatus('online'); updateOnlineCount();
+            // Soft load balancing: hop to the next instance when over cap.
+            setTimeout(() => {
+              if (NET.channel !== channel) return;
+              const population = Object.keys(channel.presenceState()).length;
+              if (population > CONFIG.INSTANCE_CAP && instance < CONFIG.INSTANCES) {
+                toast('This grove is lively - moving you to instance ' + (instance + 1) + '.');
+                joinWorld(world, instance + 1);
+              }
+            }, 2000);
+          } else if ((status === 'CHANNEL_ERROR' || status === 'TIMED_OUT') && window.forestEntered && NET.channel === channel) {
+            setNetStatus('reconnecting');
+            setTimeout(() => { if (window.forestEntered && NET.channel === channel) joinWorld(world, instance); }, 3500);
+          }
+        });
+        if (!NET.lobby) {
+          // Global presence: coarse online status + current location for
+          // the friends list and cross-instance Locate. Production note:
+          // at thousands of users this becomes a DB-backed status table.
+          const lobby = NET.sb.channel('presence:lobby', { config: { presence: { key: ME.uid } } });
+          NET.lobby = lobby;
+          lobby.on('presence', { event: 'sync' }, () => {
+            NET.online.clear(); const state = lobby.presenceState();
+            for (const uid in state) NET.online.set(uid, state[uid][0]);
+            updateOnlineCount(); renderFriends();
+          });
+          lobby.subscribe(async status => { if (status === 'SUBSCRIBED') { try { await lobby.track(lobbyMeta()); } catch (_) {} } });
+        } else { try { NET.lobby.track(lobbyMeta()); } catch (_) {} }
+      }
+      async function leaveChannel() {
+        if (NET.channel) {
+          const channel = NET.channel; NET.channel = null;
+          try { await channel.untrack(); } catch (_) {}
+          try { NET.sb.removeChannel(channel); } catch (_) {}
+        }
+        for (const uid of [...remotes.keys()]) removeRemote(uid);
+      }
+      function platformTick(dt) {
+        if (!window.forestEntered) return;
+        if (NET.channel) {
+          netAccum += dt; sinceSent += dt;
+          if (netAccum >= CONFIG.POS_RATE_MS / 1000) {
+            netAccum = 0;
+            const r = 2 * Math.atan2(player.quaternion.y, player.quaternion.w);
+            // Broadcast when moved, plus a 5 s idle heartbeat so players
+            // standing together never go stale or vanish for each other.
+            if (Math.abs(player.position.x - lastSent.x) > .02 || Math.abs(player.position.z - lastSent.z) > .02 || Math.abs(r - lastSent.r) > .04 || sinceSent > 5) {
+              lastSent = { x: player.position.x, z: player.position.z, r }; sinceSent = 0;
+              try { NET.channel.send({ type: 'broadcast', event: 'pos', payload: { u: ME.uid, x: +lastSent.x.toFixed(2), z: +lastSent.z.toFixed(2), r: +r.toFixed(2), m: playerState.moving ? 1 : 0 } }); } catch (_) {}
+            }
+          }
+          lobbyAccum += dt;
+          if (lobbyAccum > 6 && NET.lobby) { lobbyAccum = 0; try { NET.lobby.track(lobbyMeta()); } catch (_) {} }
+        }
+        voiceAccum += dt;
+        if (voiceAccum > .5) { voiceAccum = 0; VOICE.manage(); }
+      }
+      function platformEnter() {
+        updateOnlineCount();
+        if (NET.sb) joinWorld(CONFIG.WORLD_ID, 1);
+        else toast('Offline preview: you are alone in the grove. Add free Supabase keys in CONFIG for real multiplayer.', 5200);
+      }
+      addEventListener('pagehide', () => { try { NET.channel && NET.channel.untrack(); NET.lobby && NET.lobby.untrack(); } catch (_) {} });
+
+      // ---- Friends -----------------------------------------------------
+      async function loadFriends() {
+        FRIENDS.list.clear();
+        if (NET.sb && !ME.guest) {
+          try {
+            const { data } = await NET.sb.from('friendships').select('user_id,friend_id').or('user_id.eq.' + ME.uid + ',friend_id.eq.' + ME.uid);
+            const ids = [...new Set((data || []).map(row => row.user_id === ME.uid ? row.friend_id : row.user_id))];
+            if (ids.length) {
+              const { data: profiles } = await NET.sb.from('profiles').select('id,name,gender').in('id', ids);
+              for (const p of profiles || []) FRIENDS.list.set(p.id, { uid: p.id, name: p.name || 'Wanderer', gender: p.gender });
+            }
+          } catch (error) { console.warn('Friends load:', error); }
+        } else {
+          try { for (const f of JSON.parse(sessionStorage.getItem('forest-friends') || '[]')) FRIENDS.list.set(f.uid, f); } catch (_) {}
+        }
+        renderFriends();
+      }
+      function persistGuestFriends() { try { sessionStorage.setItem('forest-friends', JSON.stringify([...FRIENDS.list.values()])); } catch (_) {} }
+      async function addFriend(uid, name, gender) {
+        if (uid === ME.uid || FRIENDS.list.has(uid)) return;
+        FRIENDS.list.set(uid, { uid, name, gender }); renderFriends();
+        if (NET.sb && !ME.guest && !String(uid).startsWith('guest-')) { try { await NET.sb.from('friendships').upsert({ user_id: ME.uid, friend_id: uid }); } catch (error) { console.warn('Add friend:', error); } }
+        else persistGuestFriends();
+        toast(name + ' added to your friends.');
+      }
+      async function removeFriend(uid) {
+        const friend = FRIENDS.list.get(uid); FRIENDS.list.delete(uid);
+        if (FRIENDS.locating && FRIENDS.locating.uid === uid) FRIENDS.locating = null;
+        renderFriends();
+        if (NET.sb && !ME.guest) { try { await NET.sb.from('friendships').delete().or('and(user_id.eq.' + ME.uid + ',friend_id.eq.' + uid + '),and(user_id.eq.' + uid + ',friend_id.eq.' + ME.uid + ')'); } catch (error) { console.warn('Remove friend:', error); } }
+        else persistGuestFriends();
+        if (friend) toast(friend.name + ' removed.');
+      }
+      function renderFriends() {
+        const list = $('friends-list'); list.textContent = '';
+        if (!FRIENDS.list.size) {
+          const empty = document.createElement('p'); empty.className = 'friends-empty';
+          empty.textContent = 'No friends yet. Add wanderers from the nearby list below.'; list.append(empty);
+        } else for (const friend of FRIENDS.list.values()) {
+          const info = NET.online.get(friend.uid), online = !!info;
+          const row = document.createElement('div'); row.className = 'friend-row';
+          const dot = document.createElement('span'); dot.className = 'friend-dot' + (online ? '' : ' off');
+          const name = document.createElement('span'); name.className = 'friend-name'; name.textContent = friend.name;
+          const sub = document.createElement('span'); sub.className = 'friend-sub';
+          sub.textContent = online ? (info.w === NET.world && info.i === NET.instance ? 'In your grove' : 'In ' + (WORLD_DIRECTORY[info.w] ? WORLD_DIRECTORY[info.w].name : 'another world') + ' · Inst ' + (info.i || 1)) : 'Offline';
+          name.append(sub); row.append(dot, name);
+          if (online) {
+            const locate = document.createElement('button'); locate.className = 'friend-action gold';
+            locate.textContent = FRIENDS.locating && FRIENDS.locating.uid === friend.uid ? 'Stop' : 'Locate';
+            locate.addEventListener('click', () => { FRIENDS.locating = FRIENDS.locating && FRIENDS.locating.uid === friend.uid ? null : friend; renderFriends(); });
+            row.append(locate);
+          }
+          const remove = document.createElement('button'); remove.className = 'friend-action'; remove.textContent = 'Remove'; remove.setAttribute('aria-label', 'Remove ' + friend.name);
+          remove.addEventListener('click', () => removeFriend(friend.uid));
+          row.append(remove); list.append(row);
+        }
+        const nearby = $('nearby-list'); nearby.textContent = '';
+        if (!remotes.size) {
+          const empty = document.createElement('p'); empty.className = 'friends-empty';
+          empty.textContent = NET.mode === 'offline' ? 'Offline preview: real players appear here once the backend is configured.' : 'No one else is in this instance right now.';
+          nearby.append(empty);
+        } else for (const remote of remotes.values()) {
+          const row = document.createElement('div'); row.className = 'friend-row';
+          const dot = document.createElement('span'); dot.className = 'friend-dot'; dot.style.background = genderColor(remote.gender);
+          const name = document.createElement('span'); name.className = 'friend-name'; name.textContent = remote.name;
+          const sub = document.createElement('span'); sub.className = 'friend-sub';
+          sub.textContent = Math.round(Math.hypot(remote.root.position.x - player.position.x, remote.root.position.z - player.position.z)) + ' m away' + (remote.mic ? ' · mic on' : '');
+          name.append(sub); row.append(dot, name);
+          if (!FRIENDS.list.has(remote.uid)) {
+            const add = document.createElement('button'); add.className = 'friend-action gold'; add.textContent = 'Add friend';
+            add.addEventListener('click', () => addFriend(remote.uid, remote.name, remote.gender));
+            row.append(add);
+          }
+          nearby.append(row);
+        }
+        const onlineFriends = [...FRIENDS.list.keys()].filter(uid => NET.online.has(uid)).length;
+        const badge = $('friends-badge'); badge.style.display = onlineFriends ? 'flex' : 'none'; badge.textContent = onlineFriends;
+      }
+      function closeFriends() { $('friends-panel').hidden = true; $('friends-button').setAttribute('aria-expanded', 'false'); }
+      $('friends-button').addEventListener('click', () => {
+        const open = $('friends-panel').hidden; closeSettings();
+        $('friends-panel').hidden = !open; $('friends-button').setAttribute('aria-expanded', String(open));
+        if (open) { renderFriends(); if (NET.sb && !ME.guest) loadFriends(); }
+        keys.clear();
+      });
+      $('close-friends').addEventListener('click', closeFriends);
+      document.addEventListener('pointerdown', event => { if (event.target instanceof Element && !event.target.closest('#friends-panel,#friends-button')) closeFriends(); });
+
+      // ---- Proximity voice: P2P mesh, distance-gated --------------------
+      const VOICE = {
+        on: false, muted: true, stream: null, ctx: null, peers: new Map(), analyser: null,
+        ensureCtx() { if (!this.ctx) { const Ctx = window.AudioContext || window.webkitAudioContext; this.ctx = new Ctx(); } if (this.ctx.state === 'suspended') this.ctx.resume().catch(() => {}); return this.ctx; },
+        async enable() {
+          this.stream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: true, noiseSuppression: true } });
+          this.on = true; this.muted = false;
+          const ctx = this.ensureCtx();
+          this.analyser = ctx.createAnalyser(); this.analyser.fftSize = 256;
+          ctx.createMediaStreamSource(this.stream).connect(this.analyser);
+          for (const peer of this.peers.values()) for (const track of this.stream.getTracks()) { try { peer.pc.addTrack(track, this.stream); } catch (_) {} }
+          this.applyMute();
+        },
+        applyMute() {
+          if (this.stream) for (const track of this.stream.getAudioTracks()) track.enabled = !this.muted;
+          const live = this.on && !this.muted;
+          $('mic-icon').setAttribute('href', live ? '#i-mic' : '#i-mic-off');
+          $('mic-button').classList.toggle('active', live);
+          $('mic-button').setAttribute('aria-pressed', String(live));
+          $('mic-button').setAttribute('aria-label', live ? 'Mute microphone' : 'Unmute microphone');
+          if (NET.channel) { try { NET.channel.track(presenceMeta()); } catch (_) {} }
+        },
+        signal(to, data) { if (NET.channel) { try { NET.channel.send({ type: 'broadcast', event: 'rtc', payload: { to, from: ME.uid, ...data } }); } catch (_) {} } },
+        createPeer(uid, initiator) {
+          if (this.peers.has(uid)) return this.peers.get(uid);
+          const pc = new RTCPeerConnection({ iceServers: [{ urls: 'stun:stun.l.google.com:19302' }] });
+          const peer = { pc, gain: null, el: null };
+          this.peers.set(uid, peer);
+          if (this.stream) for (const track of this.stream.getTracks()) pc.addTrack(track, this.stream);
+          else pc.addTransceiver('audio', { direction: 'recvonly' });
+          pc.onicecandidate = e => { if (e.candidate) this.signal(uid, { candidate: e.candidate.toJSON() }); };
+          pc.ontrack = e => {
+            try {
+              const ctx = this.ensureCtx();
+              const gain = ctx.createGain(); gain.gain.value = 0;
+              ctx.createMediaStreamSource(e.streams[0]).connect(gain); gain.connect(ctx.destination);
+              peer.gain = gain;
+              const el = new Audio(); el.srcObject = e.streams[0]; el.muted = true; el.play().catch(() => {}); peer.el = el; // keeps the stream pumping in Chrome/Safari
+            } catch (_) {}
+          };
+          if (initiator) pc.onnegotiationneeded = async () => { try { await pc.setLocalDescription(await pc.createOffer()); this.signal(uid, { sdp: pc.localDescription }); } catch (_) {} };
+          pc.onconnectionstatechange = () => { if (['failed', 'closed'].includes(pc.connectionState)) this.closePeer(uid); };
+          return peer;
+        },
+        async onSignal(p) {
+          try {
+            const peer = this.peers.get(p.from) || this.createPeer(p.from, false);
+            if (p.sdp) {
+              await peer.pc.setRemoteDescription(p.sdp);
+              if (p.sdp.type === 'offer') { await peer.pc.setLocalDescription(await peer.pc.createAnswer()); this.signal(p.from, { sdp: peer.pc.localDescription }); }
+            } else if (p.candidate) await peer.pc.addIceCandidate(p.candidate);
+          } catch (error) { console.warn('Voice signal:', error); }
+        },
+        manage() {
+          if (!NET.channel || !window.forestEntered) return;
+          for (const remote of remotes.values()) {
+            const distance = Math.hypot(remote.root.position.x - player.position.x, remote.root.position.z - player.position.z);
+            // Deterministic initiator (greater uid) avoids offer glare.
+            if (distance < CONFIG.VOICE_RADIUS && (this.on || remote.mic) && !this.peers.has(remote.uid) && this.peers.size < CONFIG.MAX_VOICE_PEERS && ME.uid > remote.uid) this.createPeer(remote.uid, true);
+          }
+          for (const [uid, peer] of this.peers) {
+            const remote = remotes.get(uid);
+            const distance = remote ? Math.hypot(remote.root.position.x - player.position.x, remote.root.position.z - player.position.z) : Infinity;
+            if (!remote || distance > CONFIG.VOICE_DROP) { this.closePeer(uid); continue; }
+            if (peer.gain) peer.gain.gain.value = Math.pow(clamp(1 - distance / CONFIG.VOICE_RADIUS, 0, 1), 1.4); // distance attenuation -> inaudible
+          }
+          if (this.analyser && this.on && !this.muted) {
+            const levels = new Uint8Array(this.analyser.frequencyBinCount); this.analyser.getByteFrequencyData(levels);
+            let sum = 0; for (const v of levels) sum += v;
+            $('mic-button').classList.toggle('speaking', sum / levels.length > 26); // voice activity state
+          } else $('mic-button').classList.remove('speaking');
+        },
+        closePeer(uid) { const peer = this.peers.get(uid); if (!peer) return; this.peers.delete(uid); try { peer.pc.close(); } catch (_) {} if (peer.el) peer.el.srcObject = null; },
+        shutdown() { for (const uid of [...this.peers.keys()]) this.closePeer(uid); if (this.stream) { for (const track of this.stream.getTracks()) track.stop(); this.stream = null; } this.on = false; this.muted = true; try { this.applyMute(); } catch (_) {} },
+      };
+      $('mic-button').addEventListener('click', async () => {
+        if (NET.mode === 'offline') { toast('Voice chat needs the live backend. Add Supabase keys in CONFIG first.'); return; }
+        try {
+          if (!VOICE.on) { await VOICE.enable(); toast('Mic on. Players within ' + CONFIG.VOICE_RADIUS + ' m hear you; volume fades with distance.'); }
+          else { VOICE.muted = !VOICE.muted; VOICE.applyMute(); toast(VOICE.muted ? 'Microphone muted.' : 'Microphone live.'); }
+        } catch (error) { toast('Microphone unavailable: ' + (error.message || 'permission denied.')); }
+      });
+
+      // ---- Portal transitions & clean exit ------------------------------
+      function enterPortal(portal) {
+        const dest = WORLD_DIRECTORY[portal.dest];
+        $('portal-overlay').classList.add('visible'); $('portal-overlay').setAttribute('aria-hidden', 'false');
+        $('portal-title').textContent = 'Opening the way to ' + dest.name + '...';
+        $('portal-copy').textContent = 'Gathering light...';
+        releaseInput();
+        setTimeout(() => {
+          if (dest.open && portal.dest !== NET.world) {
+            // Destination hook: when a future world ships its scene,
+            // route the traveller: joinWorld(portal.dest, 1) + load scene.
+            $('portal-overlay').classList.remove('visible');
+          } else {
+            $('portal-title').textContent = dest.name + ' has not grown in yet.';
+            $('portal-copy').textContent = 'This portal is fully wired: it has a destination id and will route travellers to one of ' + dest.name + "'s instances the moment that world opens. For now, enjoy the grove.";
+          }
+        }, 1100);
+      }
+      $('portal-close').addEventListener('click', () => { $('portal-overlay').classList.remove('visible'); $('portal-overlay').setAttribute('aria-hidden', 'true'); });
+      $('portal-prompt').addEventListener('click', () => { if (activePortal) enterPortal(activePortal); });
+      async function exitGame() {
+        // Clean session end: stop voice, untrack presence so the avatar
+        // vanishes for everyone, close channels, flip online status.
+        try { VOICE.shutdown(); } catch (_) {}
+        if (NET.lobby) { try { await NET.lobby.untrack(); NET.sb.removeChannel(NET.lobby); } catch (_) {} NET.lobby = null; NET.online.clear(); }
+        await leaveChannel();
+        FRIENDS.locating = null;
+        window.forestEntered = false;
+        document.body.classList.remove('is-playing');
+        $('hud').setAttribute('inert', ''); closeFriends();
+        $('locate-arrow').hidden = true; $('portal-prompt').hidden = true;
+        $('exit-screen').hidden = false;
+        setNetStatus(NET.sb ? 'ready' : 'offline'); releaseInput();
+        try { $('rejoin-button').focus(); } catch (_) {}
+      }
+      $('exit-button').addEventListener('click', exitGame);
+      $('rejoin-button').addEventListener('click', () => {
+        $('exit-screen').hidden = true; $('hud').removeAttribute('inert');
+        document.body.classList.add('is-playing'); window.forestEntered = true;
+        player.position.copy(spawn); playerState.velocity.set(0, 0, 0); playerState.vy = 0; playerState.grounded = true;
+        document.dispatchEvent(new Event('forest:enter'));
+      });
+      initBackend(); loadFriends();
 
       function closeSettings() { $('settings-panel').hidden = true; $('settings-button').setAttribute('aria-expanded', 'false'); }
       $('settings-button').addEventListener('click', () => { const open = $('settings-panel').hidden; $('settings-panel').hidden = !open; $('settings-button').setAttribute('aria-expanded', String(open)); keys.clear(); });
@@ -878,7 +1551,7 @@
       });
       $('volume').addEventListener('input', event => { settings.volume = Number(event.target.value) / 100; if (audio && settings.sound) audio.master.gain.setTargetAtTime(settings.volume, audio.context.currentTime, .15); });
 
-      function enterForest() { enteredAt = time; releaseInput(); canvas.focus({ preventScroll: true }); toast('Welcome to the grove. Make yourself at home.', 4600); }
+      function enterForest() { enteredAt = time; releaseInput(); canvas.focus({ preventScroll: true }); platformEnter(); toast('Welcome to the grove. Make yourself at home.', 4600); }
       document.addEventListener('forest:enter', enterForest);
       if (window.forestEntered) enterForest();
       window.addEventListener('resize', () => { camera.aspect = innerWidth / innerHeight; camera.updateProjectionMatrix(); renderer.setSize(innerWidth, innerHeight); labels.setSize(innerWidth, innerHeight); });
@@ -890,7 +1563,7 @@
         const elapsed = Math.max((now - lastFrame) / 1000, 0), dt = Math.min(elapsed, .045); lastFrame = now;
         if (document.hidden) return;
         time += dt; windUniform.value = reducedMotion ? 0 : time;
-        updatePlayer(dt); updateBots(dt); updateCamera(dt);
+        updatePlayer(dt); updateRemotePlayers(dt); updatePortals(dt); updateLocate(); platformTick(dt); updateCamera(dt);
         if (!reducedMotion) {
           for (const cloud of clouds) { cloud.position.x += dt * .055; if (cloud.position.x > 120) cloud.position.x = -120; }
           for (let i = 0; i < fallingLeaves.length; i++) {
@@ -901,14 +1574,13 @@
           }
           fallingMesh.instanceMatrix.needsUpdate = true; motes.rotation.y = Math.sin(time * .045) * .08; motes.position.y = Math.sin(time * .35) * .13;
         } else { fallingMesh.visible = false; }
-        nextChat -= dt;
-        if (nextChat <= 0) { const index = Math.floor(rand() * 6); appendMessage(names[index], chatLines[Math.floor(rand() * chatLines.length)], messageColors[index]); nextChat = between(8, 15); }
         renderer.render(scene, camera); labels.render(scene, camera);
         frameCount++; fpsTime += elapsed;
         if (fpsTime >= .7) { fpsSmoothed = fpsSmoothed * .3 + frameCount / fpsTime * .7; $('fps-value').textContent = String(Math.round(fpsSmoothed)); fpsTime = 0; frameCount = 0; }
       }
       renderer.render(scene, camera); labels.render(scene, camera);
-      window.forestReady = true; window.forestLoadFailed = false; $('engine-status').hidden = true; $('entry-ready').textContent = 'Your cozy corner is ready.';
+      window.forestReady = true; window.forestLoadFailed = false; $('engine-status').hidden = true;
+      if (!ME.ready) $('entry-ready').textContent = 'The grove is ready. Sign in and save your profile to enter.';
       lastFrame = performance.now(); requestAnimationFrame(animate);
     }
   </script>
